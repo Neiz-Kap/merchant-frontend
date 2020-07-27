@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  max-width: 206px;
+  width: 100%;
+  max-height: 46px;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  letter-spacing: 0.2px;
+  color: #1B1E24;
+  margin-bottom: 11px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #252631;
+}
+
+h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #252631;
+}
+
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+#root {
+  min-height: 100vh;
+  background-image: url('img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.secondary {
+  font-size: 14px;
+  line-height: 21px;
+  color: #98A9BC;
+}
+
+.formBlock {
+  max-width: 342px;
+  width: 100%;
+  padding-top: 54px;
+}
+
+.logo {
+  margin-bottom: 83px;
+}
+
+.title {
+  margin-bottom: 39px;
+}
+
+.btn {
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.btn-primary {
+  /* padding: 15px 78px; */
+  background-color: #FFAB2B;
+  border: #FFAB2B;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #F2F4F6;
+  color: #FFAB2B;
+}
+
+label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #252631;
+}
+
+input {
+  background: #FFFFFF;
+  border: 1px solid #E8ECEF!important;
+  box-sizing: border-box;
+  border-radius: 4px!important;
+  color:#1B1E24!important;
+  font-size: 14px!important;
+  line-height: 16px!important;
+}
+
+input[type=checkbox] {
+  background-color: #98A9BC!important;
+  border-radius: 2px!important;
+}
+
+::placeholder {
+  color: #98A9BC!important;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nameInput, .emailInput {
+  margin-bottom: 18px;
+}
+
+.checkBoxInput {
+  margin-bottom: 30px;
+}
+
+.passwordInput {
+  margin-bottom: 30px;
+}
+
+.signUpButton {
+  max-width: 360px;
+  width: 100%;
+  max-height: 46px;
+  height: 100%;
+}
+
+.registerForm {
+  margin-bottom: 50px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #252631;
+}
+
+.center {
+  text-align: center;
 }
