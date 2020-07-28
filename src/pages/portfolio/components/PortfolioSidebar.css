@@ -1,0 +1,115 @@
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+  
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+.sidebar {
+    border-right: 1px #E8ECEF solid;
+    max-width: 242px;
+    width: 100%;
+    max-height: 970px;
+    height: 100%;
+}
+
+.sidebar .list-group-item.active {
+    background-color: #F8FAFB!important;
+    border-bottom: 0!important;
+    border-left: 2px #FFAB2B solid;
+}
+
+.sidebar .list-group-item {
+    width: 242px;
+    border-bottom: 0!important;
+    height: 64px;
+    font-size: 14px!important;
+    text-transform: uppercase;
+    padding-left: 28px!important;
+    padding-top: 22px!important;
+    padding-bottom: 23px!important;
+    color: #252631;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+.sidebar .list-group-item i {
+    color: #778CA2;
+    /* width: 45px; */
+    height: 26px;
+    font-size: 22px!important;
+    padding-right: 18px!important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.sidebar .list-group-item.active i {
+    color: #FFAB2B!important;
+}
+
+.cards-list-header {
+    color: #98A9BC!important;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.cards-list-text {
+    padding-left: 28px;
+}
+
+.cards-list-add {
+    padding-right: 21px;
+    color: #98A9BC!important;
+    text-decoration: none!important;
+    line-height: 21px!important;
+    font-weight: 400!important;
+}
+
+.cards-list-add i {
+    padding-right: 4px;
+}
+
+.sidebar .list-group {
+    margin-bottom: 24px;
+}
+
+.list-group-item.list-group-card {
+    color: #252631!important;
+    height: 46px!important;
+    padding-top: 12px!important;
+    padding-bottom: 14px!important;
+}
+
+.list-group-item.list-group-card.visa {
+    border-left: 2px #4D7CFE solid!important;
+}
+
+.list-group-item.list-group-card.mastercard {
+    border-left: 2px #FFAB2B solid!important;
+}
+
+.list-group-item.list-group-card.cash {
+    border-left: 2px #FE4D97 solid!important;
+}
+
+.list-group-item.list-group-card.active i {
+    color: #778CA2!important;
+}
+
+.sidebar .list-group-item:hover, .sidebar .list-group-item:focus, .sidebar .list-group-item:active {
+    background-color: #F8FAFB!important;
+}

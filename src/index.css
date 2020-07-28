@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: "LineAwesome";
+  src: url("./fonts/line-awesome.ttf") format("ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html {
+  font-family: 'Roboto', LineAwesome, sans-serif!important;
+  text-decoration: none;
+}
+
+button {
+  max-width: 206px;
+  width: 100%;
+  max-height: 46px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  letter-spacing: 0.2px;
+  color: #1B1E24;
+  margin-bottom: 11px;
+}
+
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #252631;
+}
+
+h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #252631;
+}
+
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.secondary {
+  font-size: 14px;
+  line-height: 21px;
+  color: #98A9BC;
+}
+
+
+.btn {
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.btn-primary {
+  /* padding: 15px 78px; */
+  background-color: #FFAB2B!important;
+  border: #FFAB2B!important;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #F2F4F6!important;
+  color: #FFAB2B!important;
+}
+
+label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #252631;
+}
+
+input {
+  background: #FFFFFF;
+  border: 1px solid #E8ECEF!important;
+  box-sizing: border-box;
+  border-radius: 4px!important;
+  color:#1B1E24!important;
+  font-size: 14px!important;
+  line-height: 16px!important;
+}
+
+input[type=checkbox] {
+  background-color: #98A9BC!important;
+  border-radius: 2px!important;
+}
+
+::placeholder {
+  color: #98A9BC!important;
+  font-size: 14px!important;
+  line-height: 16px!important;
+}
+
+a {
+  font-weight: 500!important;
+  font-size: 14px!important;
+  line-height: 16px!important;
+  color: #252631!important;
+}
+
+.center {
+  text-align: center;
 }
