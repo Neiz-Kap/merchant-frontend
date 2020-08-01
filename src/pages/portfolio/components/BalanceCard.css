@@ -7,9 +7,15 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #FFFFFF;
+    color: #252631;
     border-radius: 3px;
+}
+
+.balance-card p {
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .balance-card-header {
@@ -23,6 +29,10 @@
     padding: 5% 0;
 }
 
+.balance-card-header-more .la-ellipsis-h {
+    color: #778CA2;
+    margin-right: 11px;
+}
 
 .balance-card-header-text {
     font-weight: 400;
@@ -33,4 +43,34 @@
     margin-bottom: 0;
     margin-left: 23px;
     margin-right: 23px;
+}
+
+.card-item {
+    max-height: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.card-icon {
+    margin: 0 23px;
+    font-size: 40px;
+}
+
+.card-item span {
+    color: #98A9BC;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-info-text {
+    margin: 0 11px 0 8px;
 }
