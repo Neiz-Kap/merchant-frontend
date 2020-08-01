@@ -1,0 +1,17 @@
+.account-background{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-block{
+    max-width: 556px;
+    width: 100%;
+    padding: 0 24px 27px;
+}
+
+.account-btn{
+    margin-top: 37px;
+}
