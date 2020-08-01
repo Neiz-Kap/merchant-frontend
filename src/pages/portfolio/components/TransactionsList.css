@@ -1,0 +1,68 @@
+.transactions {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.transactions-list-header {
+    display: flex;
+    align-items: center;
+    color: #778CA2;
+    position: relative;
+    max-height: 56px;
+    padding: 5% 0;
+    border-bottom: 1px solid #E8ECEF;
+    justify-content: space-between;
+}
+
+.transactions-list-header-search {
+    display: flex;
+    align-items: center;
+}
+
+.transactions-list-header-search-text {
+    font-weight: 500;
+    font-size: 12px !important;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #252631;
+    margin-bottom: 0;
+    margin-left: 14px;
+}
+
+.transactions-list-header-text {
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 19px;
+    letter-spacing: 0.2;
+    color: #252631;
+    margin-bottom: 0;
+    margin-left: 23px;
+}
+
+.transactions-list-header input {
+    height: inherit;
+    font-size: 12px;
+    border: none !important;
+}
+
+::placeholder {
+    font-weight: 500;
+}
+
+.transactions-list-header i {
+    margin: 0 6px 0 25px;
+}
+
+.transactions-list-header .la-sync {
+    margin-right: 22px;
+    font-size: 18px;
+}
+
+.transaction-list-header-refresh {
+    display: flex;
+    cursor: pointer;
+}

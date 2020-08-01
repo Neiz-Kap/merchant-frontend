@@ -1,0 +1,60 @@
+.spendings-card {
+    max-width: 261px;
+    width: 100%;
+    height: 48%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    background-image: url('../../../img/chart.svg');
+}
+
+.spendings-card-header {
+    display: flex;
+    align-items: center;
+    color: #778CA2;
+    position: relative;
+    max-height: 56px;
+    padding: 5% 0;
+    border-bottom: 1px solid #E8ECEF;
+    justify-content: space-between;
+}
+
+.spendings-card-header-text {
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 19px;
+    letter-spacing: 0.2;
+    color: #252631;
+    margin-bottom: 0;
+    margin-left: 23px;
+    padding: 5% 0;
+}
+
+.spendings-card-header-more i {
+    margin-right: 21px;
+}
+
+.spendings-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 15px;
+    font-size: 14px;
+    max-height: 55px;
+    background-color: #F8FAFB;
+    font-weight: 500;
+}
+
+.spendings-card-content p {
+    margin: 0;
+    padding: 5% 0;
+}
+
+.spendings-card-content i {
+    font-size: 18px;
+    color: #FFAB2B;
+}

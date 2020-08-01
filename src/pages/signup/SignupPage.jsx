@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './../../img/logo.png';
-import './SignupPage.css';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import './SignupPage.css';
 
 function SignupPage() {
   return (

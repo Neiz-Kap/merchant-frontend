@@ -1,0 +1,76 @@
+.transaction,
+.category,
+.info {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.transaction {
+    padding: 10px 25px;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.transaction p {
+    margin: 0;
+}
+
+.transaction span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #98A9BC;
+}
+
+.category {
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 171, 43, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFAB2B;
+}
+
+.category-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-text p {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #252631;
+}
+
+
+.info-text {
+    text-align: right;
+    margin-right: 18px;
+}
+
+.info-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.175px;
+    color: #252631;
+}
+
+.la-ruble-sign:before {
+    color: #252631;
+}

@@ -9,6 +9,10 @@ body, html {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 0!important;
+}
+
 button {
   max-width: 206px;
   width: 100%;

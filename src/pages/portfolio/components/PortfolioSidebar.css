@@ -6,10 +6,11 @@
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
+    background-color: #fff;
 }
   
 #sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
+    padding: 16px 0;
     font-size: 1.2rem;
 }
 
@@ -19,10 +20,11 @@
 
 .sidebar {
     border-right: 1px #E8ECEF solid;
-    max-width: 242px;
+    max-width: 244px;
     width: 100%;
     max-height: 970px;
     height: 100%;
+    
 }
 
 .sidebar .list-group-item.active {
@@ -33,16 +35,16 @@
 
 .sidebar .list-group-item {
     width: 242px;
-    border-bottom: 0!important;
     height: 64px;
+    padding-left: 28px;
+    border-bottom: 0!important;
     font-size: 14px!important;
     text-transform: uppercase;
-    padding-left: 28px!important;
-    padding-top: 22px!important;
-    padding-bottom: 23px!important;
     color: #252631;
     letter-spacing: 0.3px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar .list-group-item i {
@@ -90,8 +92,6 @@
 .list-group-item.list-group-card {
     color: #252631!important;
     height: 46px!important;
-    padding-top: 12px!important;
-    padding-bottom: 14px!important;
 }
 
 .list-group-item.list-group-card.visa {
