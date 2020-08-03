@@ -1,3 +1,9 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .account-background{
     min-width: 100vw;
     min-height: 100vh;

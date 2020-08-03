@@ -7,7 +7,7 @@ export default class NewAccount extends React.Component {
         return (
             <div className="account-background">
                 <div className="account-block">
-                    <h5>Добавить новый ПЛАТЁЖ?</h5>
+                    <h5>Добавить новый платёж</h5>
                     <Form>
                         <Form.Group>
                             <Form.Label>Наименование карты</Form.Label>
@@ -40,7 +40,7 @@ export default class NewAccount extends React.Component {
                             <Form.Label>Номер карты</Form.Label>
                             <Form.Control type="number" placeholder="100000000023400128" />
                         </Form.Group>
-
+                        
                         <Row>
                             <Col>
                                 <Form.Label>Сумма</Form.Label>

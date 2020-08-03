@@ -3,6 +3,7 @@ import './App.css';
 import SignupPage from './pages/signup';
 import PortfolioPage from './pages/portfolio';
 import TestPage from './pages/test'
+import SettingsPage from './pages/portfolio/components/Profile'
 
 import {
   BrowserRouter as Router,
@@ -27,7 +28,7 @@ function App() {
           </ul>
         </nav>
         <Switch>
-          <Route path='/portfolio'>
+          <Route exact path='/portfolio'>
             <PortfolioPage/>
           </Route>
           <Route path='/signup'>
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path='/test'>
             <TestPage/>
+          </Route>
+          <Route path='/settings'>
+            <SettingsPage/>
           </Route>
         </Switch>
       </Router>

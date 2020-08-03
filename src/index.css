@@ -9,8 +9,12 @@ body, html {
   text-decoration: none;
 }
 
-p {
+h1, h2, h3, h4, h6, p, .h1, .h2, .h3, .h4, .h6, .p{
+  font-family: Roboto;
   margin-bottom: 0!important;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 button {
@@ -24,60 +28,47 @@ button {
 }
 
 h1 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: normal!important;
+  font-size: 30px!important;
   line-height: 35px;
-  /* identical to box height */
   letter-spacing: 0.2px;
   color: #1B1E24;
   margin-bottom: 11px;
 }
 
 h2 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
+  font-weight: normal!important;
+  font-size: 26px!important;
   line-height: 30px;
-  /* identical to box height */
-
   letter-spacing: 0.2px;
-
   color: #252631;
 }
 
 h3 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: normal!important;
+  font-size: 20px!important;
   line-height: 23px;
-  /* identical to box height */
-
   letter-spacing: 0.2px;
-
   color: #252631;
 }
 
 h4 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: normal!important;
+  font-size: 18px!important;
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #252631;
 }
 
 h5 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: normal!important;
+  font-size: 16px!important;
   line-height: 19px;
-  /* identical to box height */
   letter-spacing: 0.2px;
   color: #252631;
 }
@@ -92,7 +83,6 @@ h5 {
   color: #98A9BC;
 }
 
-
 .btn {
   font-weight: 500px;
   font-size: 14px;
@@ -101,7 +91,6 @@ h5 {
 }
 
 .btn-primary {
-  /* padding: 15px 78px; */
   background-color: #FFAB2B!important;
   border: #FFAB2B!important;
 }

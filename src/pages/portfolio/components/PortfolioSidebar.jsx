@@ -4,37 +4,45 @@ import logo from './../../../img/logo.png';
 
 import './PortfolioSidebar.css';
 
-class PortfolioSidebar extends Component {
-    render() {
-        return (        
+import { Link, useRouteMatch } from 'react-router-dom';
+
+const PortfolioSidebar = () => {
+    let { url } = useRouteMatch();
+    console.log(url)
+
+    return (
         <nav className="sidebar" id="sidebar-wrapper">
             <div className="sidebar-heading center">
-                <img src={logo} alt=""/>
+                <img src={logo} alt="" />
             </div>
             <div className="list-group list-group-flush">
-                <a href='#' className="list-group-item active">
-                <i className="las la-tachometer-alt"></i>
+                <Link to={`${url}/home`} className="list-group-item active">
+                    <i className="las la-tachometer-alt"></i>
                     <span>Портфолио</span>
-                </a>
+                </Link>
                 <a href='#' className="list-group-item">
                     <i className="las la-share"></i>
-                    Быстрые действия
-                </a>
+                Быстрые действия
+            </a>
                 <a href="#" className="list-group-item">
                     <i className="las la-briefcase"></i>
-                    Продукты
-                </a>
+                Продукты
+            </a>
                 <a href="#" className="list-group-item">
                     <i className="lar la-credit-card"></i>
-                    События
-                </a>
+                События
+            </a>
+                <a href="/settings" className="list-group-item">
+                    <i class="las la-cog"></i>
+                Настройки
+            </a>
             </div>
 
             <div className="cards-list-header">
                 <span className="cards-list-text">Счета</span>
                 <a href="#" className="cards-list-add">
                     <i className="las la-plus-circle"></i>Добавить
-                </a>
+            </a>
             </div>
 
             <div className="card-list-group list-group list-group-flush">
@@ -52,8 +60,7 @@ class PortfolioSidebar extends Component {
                 </a>
             </div>
         </nav>
-      );
-    }
-}
+    );
+};
 
 export default PortfolioSidebar;
