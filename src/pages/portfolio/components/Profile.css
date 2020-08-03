@@ -17,7 +17,7 @@
 
 .profile-wrapper{
     /* ХУрНЯ */
-    padding: 24px 155px 24px 24px;
+    padding: 50px 155px 50px 50px;
 }
 
 .profile-avatar-block{
@@ -26,6 +26,7 @@
     border-radius: 2px;
     display: flex;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .profile-avatar-box{
@@ -79,7 +80,7 @@
 
 /* Боковая панель */
 .profile-sidebar {
-    padding: 24px;
+    padding: 50px;
     max-width: 295px;
     width: 100%;
     border-left: 1px solid #E8ECEF;
@@ -110,4 +111,7 @@
 }
 .profile-sidebar-item p {
     margin-bottom: 26px!important;
+}
+.profile-sidebar-help p  {
+    margin-top: 26px!important;
 }

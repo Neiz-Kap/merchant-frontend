@@ -12,14 +12,9 @@ import BalanceCard from "./components/BalanceCard";
 import Profile from "./components/Profile";
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  Router,
   Link,
-  Routes,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
+} from "@reach/router";
 
 const PortfolioHome = () => {
   return (
@@ -37,23 +32,24 @@ const PortfolioHome = () => {
 };
 
 const PortfolioRoot = () => {
-  let { path, url } = useRouteMatch();
 
   return (
     <div className="d-flex" id="wrapper">
-      <PortfolioSidebar />
+      <PortfolioSidebar/>
 
       <div id="page-content-wrapper">
         <PortfolioNavbar />
 
-        <Switch>
-          <Route path={path}>
-            <h3>Please select a topic.</h3>
-          </Route>
-          <Route path={`${path}/ass`}>
+        {/* <Switch>
+          <Route path={`/ass`}>
               <h3>Ass</h3>
           </Route>
-        </Switch>
+        </Switch> */}
+        
+        <Router style={ { height: '100%'} }>
+          <PortfolioHome path='/'/>
+          <Profile path='settings'/>
+        </Router>
 
         <footer className="container-fluid footer">
           <p className="secondary">

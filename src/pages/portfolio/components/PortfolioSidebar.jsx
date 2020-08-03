@@ -4,19 +4,16 @@ import logo from './../../../img/logo.png';
 
 import './PortfolioSidebar.css';
 
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from '@reach/router';
 
 const PortfolioSidebar = () => {
-    let { url } = useRouteMatch();
-    console.log(url)
-
     return (
         <nav className="sidebar" id="sidebar-wrapper">
             <div className="sidebar-heading center">
                 <img src={logo} alt="" />
             </div>
             <div className="list-group list-group-flush">
-                <Link to={`${url}/home`} className="list-group-item active">
+                <Link to={`/portfolio`} className="list-group-item active">
                     <i className="las la-tachometer-alt"></i>
                     <span>Портфолио</span>
                 </Link>
@@ -32,10 +29,10 @@ const PortfolioSidebar = () => {
                     <i className="lar la-credit-card"></i>
                 События
             </a>
-                <a href="/settings" className="list-group-item">
+                <Link to="settings" className="list-group-item">
                     <i class="las la-cog"></i>
                 Настройки
-            </a>
+            </Link>
             </div>
 
             <div className="cards-list-header">
