@@ -1,0 +1,155 @@
+.accounts {
+    padding: 30px;
+}
+.accounts h5 {
+    margin-bottom: 0;
+}
+.accounts .row {
+    margin: 0;
+    flex-wrap: nowrap;
+    max-height: 94px;
+    height: 100%;
+    align-items: center;
+}
+
+.accounts-change {
+    margin-bottom: 20px;
+}
+
+.accounts-change .col {
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 22px;
+}
+.accounts-card .col-sm-3 {
+    padding: 0;
+}
+
+.accounts-change .col:nth-child(2) {
+    margin: 0 10px;
+}
+
+.change-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.change-text span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #98A9BC;
+}
+
+.change-text p {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+    color: #252631;
+    display: flex;
+
+}
+
+.account-title h5 {
+    color: #778CA2;
+}
+
+.account-title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Карточки */
+.accounts-cards {
+    margin-bottom: 20px;
+}
+
+.accounts-card> .col {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accounts-card> .col:first-child {
+    align-items: flex-start;
+}
+
+.accounts-cards .accounts-card {
+    padding: 18px 22px 13px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.accounts-card .more {
+    display: flex;
+    align-items: center;
+}
+
+.accounts-card .card-category {
+    justify-content: flex-start;
+}
+
+.card-number{
+    min-width: 145px;
+}
+
+.accounts-card p {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #252631;
+}
+
+.accounts-card span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #98A9BC;
+}
+
+/* icon */
+.card-icon {
+    min-width: 60px;
+    min-height: 40px;
+    border-radius: 4px;
+    margin-right: 22px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    mix-blend-mode: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-icon.banks {
+    background: #F8FAFB;
+    font-size: 40px;
+}
+
+.card-icon.lock {
+    background: rgba(255, 171, 42, 0.1);
+    color: #FFAB2B;
+}
+.card-icon.building {
+    background-color: rgba(109, 210, 48, 0.1);
+    color: #6DD230;
+}
+.card-icon.laptop {
+    background-color: rgba(77, 124, 254, 0.1);
+    color: #4D7CFE;
+}
+
+.la-long-arrow-alt-up {
+    color: #6DD230;
+}
+
+.la-long-arrow-alt-down {
+    color: #FE4D97;
+}

@@ -15,9 +15,9 @@ const TransactionListSearchHeader = () => (
 );
 
 const TransactionListHeader = () => (
-    <div className="transactions-list-header">
-        <p className="transactions-list-header-text">Последние транзакции</p>
-        <div className="transaction-list-header-refresh">
+    <div className="list-header">
+        <p className="list-header-text">Последние транзакции</p>
+        <div className="list-header-icons">
             <i className="las la-sync"></i>
         </div>
     </div>

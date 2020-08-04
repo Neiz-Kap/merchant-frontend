@@ -11,9 +11,9 @@ export default class BalanceCard extends React.Component {
     render() {
         return (
             <div className="balance-card">
-                <div className="balance-card-header">
-                    <p className="balance-card-header-text">Доступные средства</p>
-                    <div className="balance-card-header-more">
+                <div className="list-header">
+                    <p className="list-header-text">Доступные средства</p>
+                    <div className="list-header-icons">
                         <i className="las la-ellipsis-h"></i>
                     </div>
                 </div>

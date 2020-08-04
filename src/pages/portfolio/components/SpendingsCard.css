@@ -33,10 +33,6 @@
     padding: 5% 0;
 }
 
-.spendings-card-header-more i {
-    margin-right: 21px;
-}
-
 .spendings-card-content {
     display: flex;
     justify-content: space-between;

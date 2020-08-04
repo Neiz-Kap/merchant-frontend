@@ -7,7 +7,6 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    /* justify-content: space-between; */
     background-color: #FFFFFF;
     color: #252631;
     border-radius: 3px;
@@ -16,33 +15,6 @@
 .balance-card p {
     font-size: 16px;
     line-height: 19px;
-}
-
-.balance-card-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-    max-height: 56px;
-    height: 100%;
-    border-bottom: 1px solid #E8ECEF;
-    justify-content: space-between;
-    padding: 5% 0;
-}
-
-.balance-card-header-more .la-ellipsis-h {
-    color: #778CA2;
-    margin-right: 11px;
-}
-
-.balance-card-header-text {
-    font-weight: 400;
-    font-size: 16px !important;
-    line-height: 19px;
-    letter-spacing: 0.2;
-    color: #252631;
-    margin-bottom: 0;
-    margin-left: 23px;
-    margin-right: 23px;
 }
 
 .card-item {
@@ -54,7 +26,7 @@
     border-bottom: 1px solid #E8ECEF;
 }
 
-.card-icon {
+.balance-card .card-icon {
     margin: 0 23px;
     font-size: 40px;
 }

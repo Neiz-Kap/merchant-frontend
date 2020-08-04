@@ -9,9 +9,9 @@ export default class AssetsCard extends React.Component {
     render() {
         return (
             <div className="assets-card">
-                <div className="assets-card-header">
-                    <p className="assets-card-header-text">Счета</p>
-                    <div className="assets-card-header-more">
+                <div className="list-header">
+                    <p className="list-header-text">Счета</p>
+                    <div className="list-header-icons">
                         <i class="las la-chevron-circle-left"></i>
                         <i class="las la-chevron-circle-right"></i>
                     </div>

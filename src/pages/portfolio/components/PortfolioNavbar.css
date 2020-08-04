@@ -1,9 +1,9 @@
 .navbar {
-    border-bottom: 1px #E8ECEF solid;
-    background-color: #fff;
-    max-height: 64px;
+    border-bottom: 1px solid #E8ECEF;
+    background-color: #FFFFFF;
+    max-height: 65px;
     height: 100%;
-    padding: 0;
+    padding: 13px 0;
     justify-content: space-between;
 }
 

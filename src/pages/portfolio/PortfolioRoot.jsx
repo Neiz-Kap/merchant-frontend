@@ -10,7 +10,8 @@ import PortfolioNavbar from "./components/PortfolioNavbar";
 import { Row, Col } from "react-bootstrap";
 import BalanceCard from "./components/BalanceCard";
 import Profile from "./components/Profile";
-
+import Accounts from "./components/Accounts";
+import Payments from "./components/Payments";
 import {
   Router,
   Link,
@@ -39,16 +40,12 @@ const PortfolioRoot = () => {
 
       <div id="page-content-wrapper">
         <PortfolioNavbar />
-
-        {/* <Switch>
-          <Route path={`/ass`}>
-              <h3>Ass</h3>
-          </Route>
-        </Switch> */}
         
         <Router style={ { height: '100%'} }>
           <PortfolioHome path='/'/>
           <Profile path='settings'/>
+          <Accounts path='accounts'/>
+          <Payments path='payments'/>
         </Router>
 
         <footer className="container-fluid footer">

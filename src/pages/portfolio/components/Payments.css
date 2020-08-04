@@ -1,0 +1,11 @@
+.payments {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+}
+
+.payments-providers, .transfer-block{
+    background-color: #FFFFFF;
+    width: 49%;
+}

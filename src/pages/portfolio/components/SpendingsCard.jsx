@@ -10,9 +10,9 @@ export default class SpendingsCard extends React.Component {
     render() {
         return (
             <div className="spendings-card">
-                <div className="spendings-card-header">
-                    <p className="spendings-card-header-text">Расходы</p>
-                    <div className="spendings-card-header-more">
+                <div className="list-header">
+                    <p className="list-header-text">Расходы</p>
+                    <div className="list-header-icons">
                         <i class="las la-ellipsis-h"></i>
                     </div>
                 </div>

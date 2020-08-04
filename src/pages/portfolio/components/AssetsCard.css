@@ -9,32 +9,6 @@
     border-radius: 3px;
 }
 
-.assets-card-header {
-    display: flex;
-    align-items: center;
-    color: #778CA2;
-    position: relative;
-    max-height: 56px;
-    padding: 5% 0;
-    border-bottom: 1px solid #E8ECEF;
-    justify-content: space-between;
-}
-
-.assets-card-header-text {
-    font-weight: 400;
-    font-size: 16px !important;
-    line-height: 19px;
-    letter-spacing: 0.2px;
-    color: #252631;
-    margin-bottom: 0;
-    margin-left: 23px;
-    padding: 5% 0;
-}
-
-.assets-card-header-more i {
-    margin-right: 21px;
-}
-
 .assets-card-footer {
     display: flex;
     justify-content: space-between;

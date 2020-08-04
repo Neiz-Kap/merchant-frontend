@@ -27,7 +27,7 @@
   background-color: #fff;
   max-height: 62px;
   height: 100%;
-  margin-top: 22px;
+  padding: 20px 15px;
 }
 
 .footer p {
@@ -36,7 +36,7 @@
 
 .content { 
   height: 100%;
-  padding-top: 29px;
+  padding: 30px;
   display: flex;
 }
 

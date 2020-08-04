@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: "LineAwesome";
   src: url("./fonts/line-awesome.ttf") format("ttf");
 }
 
-body, html {
-  font-family: 'Roboto', LineAwesome, sans-serif!important;
+body,
+html {
+  font-family: 'Roboto', LineAwesome, sans-serif !important;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h6, p, .h1, .h2, .h3, .h4, .h6, .p{
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+.h1,
+.h2,
+.h3,
+.h4,
+.h6,
+.p {
   font-family: Roboto;
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
   padding: 0;
   border: none;
   outline: none;
@@ -29,8 +42,8 @@ button {
 
 h1 {
   font-style: normal;
-  font-weight: normal!important;
-  font-size: 30px!important;
+  font-weight: normal !important;
+  font-size: 30px !important;
   line-height: 35px;
   letter-spacing: 0.2px;
   color: #1B1E24;
@@ -39,8 +52,8 @@ h1 {
 
 h2 {
   font-style: normal;
-  font-weight: normal!important;
-  font-size: 26px!important;
+  font-weight: normal !important;
+  font-size: 26px !important;
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #252631;
@@ -48,8 +61,8 @@ h2 {
 
 h3 {
   font-style: normal;
-  font-weight: normal!important;
-  font-size: 20px!important;
+  font-weight: normal !important;
+  font-size: 20px !important;
   line-height: 23px;
   letter-spacing: 0.2px;
   color: #252631;
@@ -57,8 +70,8 @@ h3 {
 
 h4 {
   font-style: normal;
-  font-weight: normal!important;
-  font-size: 18px!important;
+  font-weight: normal !important;
+  font-size: 18px !important;
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #252631;
@@ -66,11 +79,12 @@ h4 {
 
 h5 {
   font-style: normal;
-  font-weight: normal!important;
-  font-size: 16px!important;
+  font-weight: normal !important;
+  font-size: 16px !important;
   line-height: 19px;
   letter-spacing: 0.2px;
   color: #252631;
+  margin-bottom: 0 !important;
 }
 
 .light {
@@ -91,13 +105,15 @@ h5 {
 }
 
 .btn-primary {
-  background-color: #FFAB2B!important;
-  border: #FFAB2B!important;
+  background-color: #FFAB2B !important;
+  border: #FFAB2B !important;
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  background-color: #F2F4F6!important;
-  color: #FFAB2B!important;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #F2F4F6 !important;
+  color: #FFAB2B !important;
 }
 
 label {
@@ -110,32 +126,57 @@ label {
 
 input {
   background: #FFFFFF;
-  border: 1px solid #E8ECEF!important;
+  border: 1px solid #E8ECEF !important;
   box-sizing: border-box;
-  border-radius: 4px!important;
-  color:#1B1E24!important;
-  font-size: 14px!important;
-  line-height: 16px!important;
+  border-radius: 4px !important;
+  color: #1B1E24 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
 }
 
 input[type=checkbox] {
-  background-color: #98A9BC!important;
-  border-radius: 2px!important;
+  background-color: #98A9BC !important;
+  border-radius: 2px !important;
 }
 
 ::placeholder {
-  color: #98A9BC!important;
-  font-size: 14px!important;
-  line-height: 16px!important;
+  color: #98A9BC !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  font-weight: 500;
 }
 
 a {
-  font-weight: 500!important;
-  font-size: 14px!important;
-  line-height: 16px!important;
-  color: #252631!important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #252631 !important;
 }
 
 .center {
   text-align: center;
+}
+
+.list-header {
+  max-height: 56px;
+  padding: 20px 0;
+  color: #778CA2;
+  border-bottom: 1px solid #E8ECEF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-header-text {
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #252631;
+  margin-bottom: 0;
+  margin-left: 23px;
+}
+
+.list-header-icons {
+  margin-right: 21px;
 }

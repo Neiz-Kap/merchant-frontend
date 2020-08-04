@@ -20,26 +20,26 @@ const PortfolioSidebar = () => {
                 <a href='#' className="list-group-item">
                     <i className="las la-share"></i>
                 Быстрые действия
-            </a>
-                <a href="#" className="list-group-item">
+                </a>
+                <Link to="accounts" className="list-group-item">
                     <i className="las la-briefcase"></i>
-                Продукты
-            </a>
-                <a href="#" className="list-group-item">
+                Счета
+                </Link>
+                <Link to="payments" className="list-group-item">
                     <i className="lar la-credit-card"></i>
                 События
-            </a>
+                </Link>
                 <Link to="settings" className="list-group-item">
                     <i class="las la-cog"></i>
                 Настройки
-            </Link>
+                </Link>
             </div>
 
             <div className="cards-list-header">
                 <span className="cards-list-text">Счета</span>
                 <a href="#" className="cards-list-add">
                     <i className="las la-plus-circle"></i>Добавить
-            </a>
+                </a>
             </div>
 
             <div className="card-list-group list-group list-group-flush">

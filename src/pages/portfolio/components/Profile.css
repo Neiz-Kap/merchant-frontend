@@ -1,26 +1,27 @@
-.profile{
-    height: 100%;
+.profile {
     display: flex;
     justify-content: space-between;
+    background-color: #FFFFFF;
+    margin: 30px;
 }
 
-.profile-block{
-    
+.profile-block {
+
     max-width: 695px;
     width: 100%;
-    
+
 }
 
-.profile-block > .profile-wrapper > h5{
+.profile-block>.profile-wrapper>h5 {
     margin-bottom: 25px;
 }
 
-.profile-wrapper{
-    /* ХУрНЯ */
-    padding: 50px 155px 50px 50px;
+.profile-wrapper {
+    margin-right: 155px;
+    padding: 24px 0 24px 24px;
 }
 
-.profile-avatar-block{
+.profile-avatar-block {
     width: 100%;
     border: 1px solid #E8ECEF;
     border-radius: 2px;
@@ -29,17 +30,17 @@
     background-color: #FFFFFF;
 }
 
-.profile-avatar-box{
+.profile-avatar-box {
     padding: 26px 0 26px 26px;
     display: flex;
 }
 
-.profile-avatar-box h4{
+.profile-avatar-box h4 {
     display: flex;
     align-items: center;
 }
 
-.profile-avatar{
+.profile-avatar {
     width: 70px;
     height: 70px;
     border: 1px solid #fff;
@@ -48,7 +49,7 @@
 }
 
 /* Настройки аккаунта */
-.profile-settings{
+.profile-settings {
     max-height: 485px;
     height: 100%;
     margin-top: 30px;
@@ -57,30 +58,28 @@
     justify-content: space-between;
 }
 
-.profile-settings form:first-child{
+.profile-settings form:first-child {
     margin-bottom: 140px;
 }
 
-
-
-
-.orange-btn{
-    width: 205px!important;
+.orange-btn {
+    width: 205px !important;
     font-size: 14px;
     font-weight: 500;
 }
-.back{
+
+.back {
     width: 146px;
     margin-left: 12px;
     color: #778CA2;
-    background-color: #F2F4F6!important;
+    background-color: #F2F4F6 !important;
     font-size: 14px;
     font-weight: 500;
 }
 
 /* Боковая панель */
 .profile-sidebar {
-    padding: 50px;
+    padding: 24px;
     max-width: 295px;
     width: 100%;
     border-left: 1px solid #E8ECEF;
@@ -88,30 +87,35 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .profile-sidebar a {
-    color:#778CA2!important;
+    color: #778CA2 !important;
 }
 
 .profile-sidebar a:focus {
-    color:#252631!important;
+    color: #252631 !important;
 }
 
-.profile-sidebar a:before{
+.profile-sidebar a:before {
     width: 1px;
     height: 16px;
     margin-left: 22px;
     opacity: 0;
 }
-.profile-sidebar a:before:focus{
+
+.profile-sidebar a:before:focus {
     opacity: 1;
     background-color: black;
 }
+
 .profile a {
     text-decoration: none;
 }
+
 .profile-sidebar-item p {
-    margin-bottom: 26px!important;
+    margin-bottom: 26px !important;
 }
-.profile-sidebar-help p  {
-    margin-top: 26px!important;
+
+.profile-sidebar-help p {
+    margin-top: 26px !important;
 }
