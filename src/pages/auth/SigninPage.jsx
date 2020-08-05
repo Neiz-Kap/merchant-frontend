@@ -16,7 +16,7 @@ export default function SigninPage() {
           <Form className="auth-form">
             <Form.Group className="emailInput padding-vert-18" controlId="formEmail">
               <Form.Label>Ваша почта</Form.Label>
-              <Form.Control type="email" placeholder="Ваша почта" />
+              <Form.Control type="email" placeholder="example@gmail.com" />
             </Form.Group>
 
             <Form.Group className="passwordInput" controlId="formPassword">

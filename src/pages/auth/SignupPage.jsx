@@ -37,7 +37,7 @@ function SignupPage() {
                 <Form.Check type="checkbox" label="Я согласен с правилами и условиями" />
               </Form.Group>
               <Button className="auth-form-button" variant="primary" type="submit">
-                Submit
+                Зарегистрироваться
               </Button>
             </Form>
             <p className="center secondary">Уже есть аккаунт? <a href="">Авторизоваться</a></p>
