@@ -5,7 +5,72 @@
     padding: 30px;
 }
 
-.payments-providers, .transfer-block{
+.payments-providers,
+.transfer-block {
     background-color: #FFFFFF;
     width: 49%;
+}
+
+.payments .list-header-icons input {
+    height: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    border: none !important;
+    text-transform: uppercase;
+}
+
+.list-header-icons input:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+/* PROVIDER */
+.providers-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.providers-category,
+.providers-item .more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.providers-item .more p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.175px;
+}
+
+.providers-item .more i {
+    margin-left: 18px;
+}
+
+.providers-category-text span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #98A9BC;
+}
+
+/* Instant transfer - Мгновенный перевод */
+.transfer-block form {
+    max-height: calc(100% - 56px);
+    height: 100%;
+    padding: 20px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-card {
+    display: flex;
+    justify-content: space-between;
 }

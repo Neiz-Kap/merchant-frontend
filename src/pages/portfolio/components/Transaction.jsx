@@ -25,7 +25,7 @@ export default class Transaction extends React.Component {
         return (
             <div className="transaction">
                 <div className="category">
-                    <div className="icon"><i class="las la-train"></i></div>
+                    <div className="icon-circle-orange"><i class="las la-train"></i></div>
                     <div className="category-text">
                     <p>{ this.state.name }</p>
                         <span>{ this.state.company }</span>

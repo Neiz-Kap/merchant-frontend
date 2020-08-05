@@ -8,7 +8,7 @@ import './TestPage.css';
 function TestPage() {
     return (
         <Container id="testPage">
-            <NewAccount/>
+            
         </Container>
     );
 }
