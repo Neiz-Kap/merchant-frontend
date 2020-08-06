@@ -91,7 +91,6 @@ class SigninPage extends React.Component {
 }
 
 function mapStateToProps(state) {
-  console.log(state)
   const { loggingIn, error } = state.authReducer;
 
   return {

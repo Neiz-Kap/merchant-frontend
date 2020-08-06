@@ -30,7 +30,7 @@ const PortfolioSidebar = () => {
                 События
                 </Link>
                 <Link to="settings" className="list-group-item">
-                    <i class="las la-cog"></i>
+                    <i className="las la-cog"></i>
                 Настройки
                 </Link>
             </div>

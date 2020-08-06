@@ -25,7 +25,7 @@ export default class Transaction extends React.Component {
         return (
             <div className="transaction">
                 <div className="category">
-                    <div className="icon-circle-orange"><i class="las la-train"></i></div>
+                    <div className="icon-circle-orange"><i className="las la-train"></i></div>
                     <div className="category-text">
                     <p>{ this.state.name }</p>
                         <span>{ this.state.company }</span>
@@ -37,7 +37,7 @@ export default class Transaction extends React.Component {
                         <span>{ this.state.date }</span>
                     </div>
                     <div className="more">
-                        <i class="las la-ellipsis-h"></i>
+                        <i className="las la-ellipsis-h"></i>
                     </div>
                 </div>
             </div>
