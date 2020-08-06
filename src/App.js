@@ -9,7 +9,7 @@ import TestPage from './pages/test';
 
 import history from './history';
 
-import { Router, Link, Routes } from '@reach/router';
+import { Router, Link } from '@reach/router';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {

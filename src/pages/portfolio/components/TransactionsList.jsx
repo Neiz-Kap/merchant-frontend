@@ -48,16 +48,13 @@ export default class TransactionsList extends React.Component {
     }
 
     render() {
-        const transactions = [];
 
         let header;
         if (this.state.search)
             header = <TransactionListSearchHeader/>;
         else header = <TransactionListHeader/>;
 
-        this.state.transactions.forEach(element => {
-            transactions.push(<Transaction name={element.name} company={element.company} type={element.type} amount={element.amount} date={element.date}  />);
-        });
+        const transactions = this.state.transactions.map((element, i) => <Transaction key={i} name={element.name} company={element.company} type={element.type} amount={element.amount} date={element.date}  />)
 
         return (
             <div className="transactions">

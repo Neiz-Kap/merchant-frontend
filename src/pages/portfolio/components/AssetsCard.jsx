@@ -12,8 +12,8 @@ export default class AssetsCard extends React.Component {
                 <div className="list-header">
                     <p className="list-header-text">Счета</p>
                     <div className="list-header-icons">
-                        <i class="las la-chevron-circle-left"></i>
-                        <i class="las la-chevron-circle-right"></i>
+                        <i className="las la-chevron-circle-left"></i>
+                        <i className="las la-chevron-circle-right"></i>
                     </div>
                 </div>
                 <div className="assets-card-content">
@@ -25,7 +25,7 @@ export default class AssetsCard extends React.Component {
                 </div>
                 <div className="assets-card-footer">
                     <p>Скачать заявление</p>
-                    <i class="las la-download"></i>
+                    <i className="las la-download"></i>
                 </div>
             </div>
         );

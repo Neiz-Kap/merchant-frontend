@@ -1,5 +1,6 @@
 import constants from '../constants';
-import { login as serviceLogin, logout as serviceLogout } from '../../services/auth';
+import { login as serviceLogin } from '../../services/auth';
+import { logout as serviceLogout } from '../../helpers/ResponseHandler';
 import history from '../../history';
 
 import { navigate } from '@reach/router';

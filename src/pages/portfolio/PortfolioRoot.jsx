@@ -7,17 +7,16 @@ import "./PortfolioRoot.css";
 import TransactionsList from "./components/TransactionsList";
 import PortfolioNavbar from "./components/PortfolioNavbar";
 
-import { Row, Col } from "react-bootstrap";
 import BalanceCard from "./components/BalanceCard";
 import Profile from "./components/Profile";
 import Accounts from "./components/Accounts";
 import Payments from "./components/Payments";
 import {
     Router,
-    Link,
 } from "@reach/router";
 
 import { connect } from 'react-redux';
+import { fetchProfileAction } from "../../store/actions/profile";
 
 const PortfolioHome = () => {
     return (
@@ -35,17 +34,26 @@ const PortfolioHome = () => {
 };
 
 class PortfolioRoot extends React.Component {
-    render() {
-        const { user, loggedIn } = this.props;
+    constructor(props) {
+        super(props);
+    }
 
-        const fullName = `${user.user.firstName} ${user.user.lastName}`;
+    componentDidMount() {
+        const { dispatch } = this.props;
+
+        dispatch(fetchProfileAction());
+    }
+
+    render() {
+        const { user, loggedIn, data } = this.props;
+        console.log(data)
 
         return (
             <div className="d-flex" id="wrapper">
                 <PortfolioSidebar />
 
                 <div id="page-content-wrapper">
-                    <PortfolioNavbar username={fullName} />
+                    <PortfolioNavbar />
 
                     <Router style={{ height: '100%' }}>
                         <PortfolioHome path='/' />
@@ -67,12 +75,13 @@ class PortfolioRoot extends React.Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state)
     const { loggedIn, user } = state.authReducer;
+    const { data } = state.profile;
 
     return {
         loggedIn,
-        user
+        user,
+        data,
     };
 }
 
