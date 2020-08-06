@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
-    margin: 30px;
     position: relative;
 }
-
 /* .profile-loading {
     opacity: 0;
 }
-
 .profile .spinner-border {
+
+.profile-wrapper{
+    padding: 30px;
+    background-color: #F2F2F2;
+}
     position: absolute;
     top: 50%;
     left: 50%;
