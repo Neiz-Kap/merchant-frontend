@@ -6,9 +6,10 @@ import "./Profile.css";
 export default class Profile extends React.Component {
   render() {
     return (
+      <div className="profile-wrapper">
       <div className="profile">
         <div className="profile-block">
-          <div className="profile-wrapper">
+          <div className="profile-container">
             <h5>Главная информация</h5>
             <div className="profile-avatar-block">
               <div className="profile-avatar-box">
@@ -94,6 +95,7 @@ export default class Profile extends React.Component {
             <p><a href="#">Закрыть аккаунт</a></p>
           </div>
         </div>
+      </div>
       </div>
     );
   }

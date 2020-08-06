@@ -12,11 +12,11 @@
 
 }
 
-.profile-block>.profile-wrapper>h5 {
+.profile-block>.profile-container>h5 {
     margin-bottom: 25px;
 }
 
-.profile-wrapper {
+.profile-container {
     margin-right: 155px;
     padding: 24px 0 24px 24px;
 }

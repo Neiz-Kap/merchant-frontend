@@ -1,0 +1,99 @@
+.step-wrapper-bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F2F2F2;
+}
+
+.step-auth-content {
+    min-height: inherit;
+    padding: 50px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.step-auth-count {
+    margin: 40px 0 15px 0 !important;
+}
+
+.step-auth-count span {
+    color: #778CA2;
+}
+
+.step-auth-logo {
+    margin-bottom: 40px;
+}
+
+.step-auth-block {
+    max-width: 555px;
+    background-color: #FFFFFF;
+    padding: 50px;
+    border-radius: 4px;
+}
+
+.proceed-reg a {
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFAB2B !important;
+}
+
+.proceed-reg a i {
+    font-size: 16px;
+    line-height: 17px;
+    /* так было в макете */
+    letter-spacing: 0.177778px;
+}
+
+/* Поэтапная заполняющаяся полоска */
+.step-block-line {
+    max-width: 458px;
+    width: 100%;
+    height: 12px;
+    position: relative;
+}
+
+.step-line {
+    height: 4px;
+    background-color: #FFAB2B;
+    position: absolute;
+    top: calc(50% - 2px);
+}
+
+.step-circle-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFAB2B;
+}
+
+.step2-btn button {
+    height: 50px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #E8ECEF !important;
+    color: #1B1E24 !important;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.step2-btn button:focus {
+    background-color: #FFAB2B !important;
+    border: 1px solid #E8ECEF !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.step2-btn button:nth-child(2) {
+    margin: 0 10px;
+}
