@@ -4,36 +4,38 @@ import "./PortfolioNavbar.css";
 
 import avatar from "./../../../img/avatar.png";
 
-export default () => {
-  return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="navbar-left">
-        <a href="#" id="menu-toggle">
-          <i className="las la-bars"></i>
-        </a>
+export default (props) => {
+    const { username } = props;
 
-        <p>Панель приборов</p>
-      </div>
+    return (
+        <nav className="navbar navbar-expand-lg">
+            <div className="navbar-left">
+                <a href="#" id="menu-toggle">
+                    <i className="las la-bars"></i>
+                </a>
 
-      <div className="navbar-right">
-        <a href="">
-          <i className="las la-search"></i>
-        </a>
-        <a href="">
-          <i className="las la-envelope"></i>
-        </a>
-        <a href="">
-          <i className="las la-bell"></i>
-        </a>
-        <div className="navbar-avatar">
-          <a href="">
-            <div className="avatar">
-              <img src={avatar} alt="" />
+                <p>Панель приборов</p>
             </div>
-          </a>
-          <a href="">Berry Armstrong</a>
-        </div>
-      </div>
-    </nav>
-  );
+
+            <div className="navbar-right">
+                <a href="">
+                    <i className="las la-search"></i>
+                </a>
+                <a href="">
+                    <i className="las la-envelope"></i>
+                </a>
+                <a href="">
+                    <i className="las la-bell"></i>
+                </a>
+                <div className="navbar-avatar">
+                    <a href="">
+                        <div className="avatar">
+                            <img src={avatar} alt="" />
+                        </div>
+                    </a>
+                    <a href="">{username}</a>
+                </div>
+            </div>
+        </nav>
+    );
 };

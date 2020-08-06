@@ -6,7 +6,10 @@ import PortfolioPage from './pages/portfolio';
 import TestPage from './pages/test'
 import SettingsPage from './pages/portfolio/components/Profile'
 
+import history from './history';
+
 import { Router, Link, Routes } from '@reach/router';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -21,8 +24,8 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Router>
-        <PortfolioPage path='portfolio/*' />
+      <Router history={history}>
+        <PrivateRoute component={PortfolioPage} path='portfolio/*' />
         <SignupPage path='signup' />
         <SigninPage path='signin' />
         <TestPage path='test' />

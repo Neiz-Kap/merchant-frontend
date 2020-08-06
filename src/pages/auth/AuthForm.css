@@ -61,6 +61,14 @@
     height: 100%;
 }
 
+.auth-form-button span {
+    display: none;
+}
+
+.auth-form-button:disabled span {
+    display: visible;
+}
+
 .auth-form {
     margin-bottom: 50px;
 }
