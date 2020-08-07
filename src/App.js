@@ -25,7 +25,7 @@ function App() {
             <Link to='signin'>- Авторизация </Link>
             <Link to='test'>- Тест </Link>
             <Link to='recover'>- Восстановление пароля </Link>
-            <Link to='recoverconfirm'>- Смена пароля </Link>
+            <Link to='recover-confirm'>- Смена пароля </Link>
             <Link to='stepsignup'>- Регистрация2 </Link>
           </li>
         </ul>
@@ -36,7 +36,7 @@ function App() {
         <SigninPage path='signin' />
         <TestPage path='test' />
         <RecoverPage path='recover'/>
-        <RecoverConfirm path='recoverconfirm'/>
+        <RecoverConfirm path='recover-confirm/:token'/>
         <StepSignUp path='stepsignup'/>
         <Logout path='logout'/>
       </Router>

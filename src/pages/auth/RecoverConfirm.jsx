@@ -2,6 +2,7 @@ import React from "react";
 import logo from './../../img/logo.png';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 import './AuthForm.css';
+import { navigate } from "@reach/router";
 
 export default class RecoverConfirm extends React.Component {
 
@@ -9,7 +10,8 @@ export default class RecoverConfirm extends React.Component {
         super(props);
 
         this.state = {
-            email: '',
+            password: '',
+            password2: '',
         }
     }
 
@@ -21,9 +23,16 @@ export default class RecoverConfirm extends React.Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        fetch('http://13.74.170.114:3001/api/v1/auth/forgot', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: this.state.email })})
+        const { token } = this.props;
+        if (!token) {
+            console.log('no token');
+            return;
+        }
+
+        fetch(`http://13.74.170.114:3001/api/v1/auth/password-reset/${token}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: this.state.password, password2: this.state.password2 })})
             .then((data) => {
                 console.log(data);
+                navigate('/portfolio');
             });
     }
 
@@ -45,7 +54,7 @@ export default class RecoverConfirm extends React.Component {
                                 </Form.Group>
                                 <Form.Group className="padding-vert-30 passwordInput" controlId="formPassword">
                                     <Form.Label>Подтверждение пароля</Form.Label>
-                                    <Form.Control name="password" onChange={this.onInputChange} type="password" placeholder="Подтвердите пароль" />
+                                    <Form.Control name="password2" onChange={this.onInputChange} type="password" placeholder="Подтвердите пароль" />
                                 </Form.Group>
                                 <Button className="auth-form-button" variant="primary" type="submit">
                                     Сменить пароль
