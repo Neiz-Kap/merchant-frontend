@@ -11,6 +11,7 @@ import history from './history';
 
 import { Router, Link } from '@reach/router';
 import PrivateRoute from './components/PrivateRoute';
+import Logout from './pages/Logout';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <TestPage path='test' />
         <RecoverPage path='recover'/>
         <StepSignUp path='stepsignup'/>
+        <Logout path='logout'/>
       </Router>
     </div>
   );
