@@ -3,6 +3,7 @@ import { Row, Col, Form, Button } from "react-bootstrap";
 import avatar2 from "./../../../img/avatar2.png";
 import "./Profile.css";
 import { connect } from "react-redux";
+import { Router, Link } from "@reach/router";
 
 class Profile extends React.Component {
     constructor(props) {
@@ -218,7 +219,11 @@ class Profile extends React.Component {
             <div className="profile">
                     {!loading && user &&
                         <div className="profile-block profile-loading">
-                            {this.notify(user)}
+                            <Router>
+                                <this.global path="/"/>
+                                <this.security path="security"/>
+                                <this.notify path="notifications"/>
+                            </Router>
                             <Form>
                                 <Button variant="primary" type="submit" className="orange-btn">
                                     ОБНОВИТЬ НАСТРОЙКИ
@@ -231,9 +236,9 @@ class Profile extends React.Component {
                     }
                     <div className="profile-sidebar">
                         <div className="profile-sidebar-item">
-                            <a href="#">Главная информация</a>
-                            <a href="#">Безопасность</a>    
-                            <a href="#">Уведомления</a>
+                            <Link to="">Главная информация</Link>
+                            <Link to="security">Безопасность</Link>    
+                            <Link to="notifications">Уведомления</Link>
                         </div>                    
                         <div className="profile-sidebar-help">
                             <a href="#">Центр помощи</a>

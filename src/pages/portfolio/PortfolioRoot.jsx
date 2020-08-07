@@ -57,7 +57,7 @@ class PortfolioRoot extends React.Component {
 
                     <Router style={{ height: '100%' }}>
                         <PortfolioHome path='/' />
-                        <Profile path='settings' />
+                        <Profile path='settings/*' />
                         <Accounts path='accounts' />
                         <Payments path='payments' />
                     </Router>
