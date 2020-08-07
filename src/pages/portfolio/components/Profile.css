@@ -1,37 +1,32 @@
 .profile {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
-    position: relative;
 }
-/* .profile-loading {
-    opacity: 0;
+
+.profile a {
+    text-decoration: none;
 }
-.profile .spinner-border {
+
+.profile-block {
+    max-width: 695px;
+    width: 100%;
+    margin-right: 155px;
+    padding: 24px 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .profile-wrapper{
+    height: 100%;
     padding: 30px;
     background-color: #F2F2F2;
 }
-    position: absolute;
-    top: 50%;
-    left: 50%;
-} */
 
-.profile-block {
-
-    max-width: 695px;
-    width: 100%;
-
-}
-
-.profile-block>.profile-container>h5 {
+.profile-block>h5 {
     margin-bottom: 25px;
-}
-
-.profile-container {
-    margin-right: 155px;
-    padding: 24px 0 24px 24px;
 }
 
 .profile-avatar-block {
@@ -63,8 +58,6 @@
 
 /* Настройки аккаунта */
 .profile-settings {
-    max-height: 485px;
-    height: 100%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -73,6 +66,15 @@
 
 .profile-settings form:first-child {
     margin-bottom: 140px;
+}
+
+.profile-settings .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.profile-settings .row:nth-child(2){
+    margin: 22px 0;
 }
 
 .orange-btn {
@@ -92,7 +94,7 @@
 
 /* Боковая панель */
 .profile-sidebar {
-    padding: 24px;
+    padding: 24px 24px 24px 0;
     max-width: 295px;
     width: 100%;
     border-left: 1px solid #E8ECEF;
@@ -101,34 +103,42 @@
     justify-content: space-between;
 }
 
-.profile-sidebar a {
+.profile-sidebar a{
+    width: max-content;
+    padding-left: 24px;
     color: #778CA2 !important;
+    display: block;
 }
+
+.profile-sidebar-item a{
+    width: max-content;
+    margin-bottom: 26px !important;
+}
+
+.profile-sidebar-help a {
+    width: max-content;
+    margin-top: 26px !important;
+}
+
 
 .profile-sidebar a:focus {
     color: #252631 !important;
+    border-left: #252631;
 }
 
 .profile-sidebar a:before {
     width: 1px;
     height: 16px;
     margin-left: 22px;
+    
     opacity: 0;
 }
 
 .profile-sidebar a:before:focus {
     opacity: 1;
+    
     background-color: black;
 }
 
-.profile a {
-    text-decoration: none;
-}
 
-.profile-sidebar-item p {
-    margin-bottom: 26px !important;
-}
 
-.profile-sidebar-help p {
-    margin-top: 26px !important;
-}
