@@ -3,6 +3,7 @@ import './App.css';
 import SignupPage from './pages/auth/SignupPage';
 import SigninPage from './pages/auth/SigninPage';
 import RecoverPage from './pages/auth/RecoverPage';
+import RecoverConfirm from './pages/auth/RecoverConfirm';
 import StepSignUp from './pages/auth/StepSignup';
 import PortfolioPage from './pages/portfolio';
 import TestPage from './pages/test';
@@ -24,6 +25,7 @@ function App() {
             <Link to='signin'>- Авторизация </Link>
             <Link to='test'>- Тест </Link>
             <Link to='recover'>- Восстановление пароля </Link>
+            <Link to='recoverconfirm'>- Смена пароля </Link>
             <Link to='stepsignup'>- Регистрация2 </Link>
           </li>
         </ul>
@@ -34,6 +36,7 @@ function App() {
         <SigninPage path='signin' />
         <TestPage path='test' />
         <RecoverPage path='recover'/>
+        <RecoverConfirm path='recoverconfirm'/>
         <StepSignUp path='stepsignup'/>
         <Logout path='logout'/>
       </Router>
