@@ -7,6 +7,7 @@ import RecoverConfirm from './pages/auth/RecoverConfirm';
 import StepSignUp from './pages/auth/StepSignup';
 import PortfolioPage from './pages/portfolio';
 import TestPage from './pages/test';
+import EmailConfirm from './pages/auth/EmailConfirm';
 
 import history from './history';
 
@@ -39,6 +40,7 @@ function App() {
         <RecoverConfirm path='recover-confirm/:token'/>
         <StepSignUp path='stepsignup'/>
         <Logout path='logout'/>
+        <EmailConfirm path='confirm/:token'/>
       </Router>
     </div>
   );
