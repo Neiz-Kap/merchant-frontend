@@ -1,10 +1,6 @@
-.transaction,
-.category,
-.info {
-
+.transaction {
     display: flex;
     justify-content: space-between;
-
 }
 
 .transaction {
@@ -20,37 +16,6 @@
     font-size: 14px;
     line-height: 21px;
     color: #98A9BC;
-}
-
-.category {
-    align-items: center;
-}
-
-.category-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.category-text p {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.2px;
-    color: #252631;
-}
-
-
-.info-text {
-    text-align: right;
-    margin-right: 18px;
-}
-
-.info-text p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.175px;
-    color: #252631;
 }
 
 .la-ruble-sign:before {

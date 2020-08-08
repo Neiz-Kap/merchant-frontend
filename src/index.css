@@ -186,8 +186,78 @@ a {
   margin-left: 23px;
 }
 
-.list-header-icons {
-  margin-right: 21px;
+/* cards */
+.category,
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-text p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+.info-text {
+  text-align: right;
+  margin-right: 18px;
+}
+
+.info-text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.175px;
+  color: #252631;
+}
+
+/* icon */
+.card-icon {
+  min-width: 60px;
+  min-height: 40px;
+  border-radius: 4px;
+  margin-right: 22px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  mix-blend-mode: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon.banks {
+  background: #F8FAFB;
+  font-size: 40px;
+}
+
+.card-icon.lock {
+  background: rgba(255, 171, 42, 0.1);
+  color: #FFAB2B;
+}
+.card-icon.building {
+  background-color: rgba(109, 210, 48, 0.1);
+  color: #6DD230;
+}
+.card-icon.laptop {
+  background-color: rgba(77, 124, 254, 0.1);
+  color: #4D7CFE;
 }
 
 .icon-circle-orange {
@@ -208,6 +278,11 @@ a {
   color: #FFAB2B;
 }
 
+.list-header-icons {
+  margin-right: 21px;
+}
+
+/* flex */
 .flex {
   display: flex;
 }

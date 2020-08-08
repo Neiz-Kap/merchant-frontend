@@ -33,6 +33,7 @@ class Profile extends React.Component {
         <>
             <div>
                 <h5>Главная информация</h5>
+                <br/>
                 <div className="profile-avatar-block">
                     <div className="profile-avatar-box">
                         <img className="profile-avatar" src={avatar2} alt="avatar" />
@@ -172,36 +173,60 @@ class Profile extends React.Component {
                 <Form>
                     <Row>
                         <Col>
-                            <Form.Group>
-                                <p>Product updates</p>
-                                <p className="secondary">Stair Lifts Feel The Freedom Of Your Home</p>
+                            <Form.Group className="flex-space-btw vertical-center">
+                                <div className="notify-switch-label">
+                                    <p>Product updates</p>
+                                    <p className="secondary">Stair Lifts Feel The Freedom Of Your Home</p>
+                                </div>
+                                <div className="custom-control custom-switch">
+                                    <input type="checkbox" className="custom-control-input" id="customSwitch1"/>
+                                    <label className="custom-control-label" for="customSwitch1"/>
+                                </div>
                             </Form.Group>
                         </Col>
                     </Row>
                     <hr/>
                     <Row>
                         <Col>
-                            <Form.Group>
-                                <p>Offer updates</p>
-                                <p className="secondary">A Right Media Mix Can Make The Difference</p>
+                            <Form.Group className="flex-space-btw vertical-center">
+                                <div className="notify-switch-label">
+                                    <p>Offer updates</p>
+                                    <p className="secondary">A Right Media Mix Can Make The Difference</p>
+                                </div>
+                                <div className="custom-control custom-switch">
+                                    <input type="checkbox" className="custom-control-input" id="customSwitch2"/>
+                                    <label className="custom-control-label" for="customSwitch2"/>
+                                </div>
                             </Form.Group>
                         </Col>
                     </Row>
                     <hr/>
                     <Row>
                         <Col>
-                            <Form.Group>
-                                <p>Comments</p>
-                                <p className="secondary">Advertising Relationships Vs Business Decisions</p>
+                            <Form.Group className="flex-space-btw vertical-center">
+                                <div className="notify-switch-label">
+                                    <p>Comments</p>
+                                    <p className="secondary">Advertising Relationships Vs Business Decisions</p>
+                                </div>
+                                <div className="custom-control custom-switch">
+                                    <input type="checkbox" className="custom-control-input" id="customSwitch3"/>
+                                    <label className="custom-control-label" for="customSwitch3"/>
+                                </div>
                             </Form.Group>
                         </Col>
                     </Row>
                     <hr/>
                     <Row>
                         <Col>
-                            <Form.Group>
-                                <p>Notifications</p>
-                                <p className="secondary">Creating Remarkable Poster Prints Through 4 Color Poster Printing</p>
+                            <Form.Group className="flex-space-btw vertical-center">
+                                <div className="notify-switch-label">
+                                    <p>Notifications</p>
+                                    <p className="secondary">Creating Remarkable Poster Prints Through 4 Color Poster Printing</p>
+                                </div>
+                                <div className="custom-control custom-switch">
+                                    <input type="checkbox" className="custom-control-input" id="customSwitch4"/>
+                                    <label className="custom-control-label" for="customSwitch4"/>
+                                </div>
                             </Form.Group>
                         </Col>
                     </Row>
@@ -227,9 +252,6 @@ class Profile extends React.Component {
                             <Form>
                                 <Button variant="primary" type="submit" className="orange-btn">
                                     ОБНОВИТЬ НАСТРОЙКИ
-                                </Button>
-                                <Button variant="primary" type="submit" className="back">
-                                    НАЗАД
                                 </Button>
                             </Form>
                         </div>

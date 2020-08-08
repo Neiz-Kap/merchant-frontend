@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-.profile-wrapper{
+.profile-wrapper {
     height: 100%;
     padding: 30px;
     background-color: #F2F2F2;
@@ -68,12 +68,12 @@
     margin-bottom: 140px;
 }
 
-.profile-settings .row{
+.profile-settings .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.profile-settings .row:nth-child(2){
+.profile-settings .row:nth-child(2) {
     margin: 22px 0;
 }
 
@@ -83,12 +83,53 @@
     border-radius: 4px;
 }
 
-.profile-setting-hr{
+.profile-settings .col {
+    padding: 0;
+}
+
+.profile-settings .col:first-child {
+    margin-right: 25px;
+}
+
+.profile-setting-hr {
     margin-top: 2px;
 }
 
+/* switch */
+.custom-control-label:focus,
+.custom-control-label::before,
+.custom-control-label::after {
+    box-shadow: none !important;
+    border: none;
+}
+
+.profile-settings .custom-control-input:checked~.custom-control-label::before {
+    border-color: #FFAB2B;
+    background-color: #FFAB2B;
+}
+
+.profile-settings .custom-control-label::before {
+    background-color: #F2F4F6;
+    width: 40px;
+    height: 22px;
+    border-radius: 12px;
+}
+
+.custom-switch .custom-control-label::after {
+    width: 16px !important;
+    height: 16px !important;
+    top: calc(.25rem + 2.9px);
+    left: calc(-2.25rem + 3px);
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(1.1rem);
+}
+
+/* buttons */
 .orange-btn {
     width: 205px !important;
+    height: 45px !important;
     font-size: 14px;
     font-weight: 500;
 }
@@ -113,23 +154,24 @@
     justify-content: space-between;
 }
 
-.profile-sidebar a{
+.profile-sidebar a {
     width: max-content;
     padding-left: 24px;
     color: #778CA2 !important;
     display: block;
 }
 
-.profile-sidebar *a:focus, .profile-sidebar *a:active {
+.profile-sidebar *a:focus,
+.profile-sidebar *a:active {
     color: #252631 !important;
     border-left: #252631 !important;
 }
 
-.profile-sidebar a:hover{
+.profile-sidebar a:hover {
     color: red;
 }
 
-.profile-sidebar-item a{
+.profile-sidebar-item a {
     width: max-content;
     margin-bottom: 26px !important;
 }
@@ -146,15 +188,12 @@
     width: 1px;
     height: 16px;
     margin-left: 22px;
-    
+
     opacity: 0;
 }
 
 .profile-sidebar a:before:focus {
     opacity: 1;
-    
+
     background-color: black;
 }
-
-
-
