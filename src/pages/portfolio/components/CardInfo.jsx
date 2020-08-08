@@ -43,23 +43,24 @@ export default class CardInfo extends React.Component {
                 </div>
                 <div className="card-info-content">
                     {/* Ванек, ты сможешь! */}
-                    <div className="card-block">
-                        <svg width="448" height="320" viewBox="0 0 448 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d)">
-                            <rect x="60" y="28" width="327.586" height="200" rx="10" fill="#4D7CFE"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_d" x="0" y="0" width="447.586" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                            <feOffset dy="32"/>
-                            <feGaussianBlur stdDeviation="30"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0.301961 0 0 0 0 0.486275 0 0 0 0 0.996078 0 0 0 0.158486 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                            </filter>
-                            </defs>
-                        </svg>
+                    <div className="card-info-block">
+                        <div className="card-info-bg">
+                            <div className="card-icon banks"><i class="lab la-cc-visa"></i></div>
+                            <div className="card-info-num">
+                                <p>{ this.state.cardNum }</p>
+                                <span>Card number</span>
+                            </div>
+                            <div className="card-info-holder">
+                                <div className="card-info-name">
+                                    <p>{ this.state.holder }</p>
+                                    <span>Cardholder</span>
+                                </div>
+                                <div className="card-info-valid">
+                                    <p>{ this.state.valid }</p>
+                                    <span>Valid</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="category">
