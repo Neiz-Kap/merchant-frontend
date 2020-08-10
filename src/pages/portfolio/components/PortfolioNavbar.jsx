@@ -6,137 +6,143 @@ import { connect } from "react-redux";
 
 import avatar from "./../../../img/avatar.png";
 
-import { Link } from '@reach/router';
+import { Link } from "@reach/router";
 import { logout } from "../../../store/actions/authentication";
 
 class PortfolioNavbar extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            showProfileMenu: false,
-        }
+    this.state = {
+      showProfileMenu: false,
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("mousedown", this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("mousedown", this.handleClickOutside);
+  }
+
+  handleClickOutside = (e) => {
+    console.log(e.target);
+    if (!e.target.matches(".dropdown-block-menu *")) {
+      this.setState({ showProfileMenu: false });
     }
+  };
 
-    componentDidMount() {
-        window.addEventListener('mousedown', this.handleClickOutside);
-    }
+  NavbarDropDown = (e) => {
+    e.preventDefault();
+    console.log("show");
+    this.setState({ showProfileMenu: !this.state.showProfileMenu });
+    console.log(this.state.showProfileMenu);
+  };
 
-    componentWillUnmount() {
-        window.removeEventListener('mousedown', this.handleClickOutside);
-    }
+  logout = (e) => {
+    e.preventDefault();
 
-    handleClickOutside = (e) => {
-        console.log(e.target)
-        if (!e.target.matches('.dropdown-block-menu *')) {
-            this.setState({ showProfileMenu: false });
-        }
-    }
+    const { dispatch } = this.props;
 
-    NavbarDropDown = (e) => {
-        e.preventDefault();
-        console.log('show')
-        this.setState({ showProfileMenu: !this.state.showProfileMenu });
-        console.log(this.state.showProfileMenu)
-    }
+    dispatch(logout());
+  };
 
-    logout = (e) => {
-        e.preventDefault();
-        
-        const { dispatch } = this.props;
+  render() {
+    const { data } = this.props;
+    const { showProfileMenu } = this.state;
 
-        dispatch(logout());
-    }
+    return (
+      <nav className="navbar navbar-expand-lg">
+        <div className="navbar-left">
+          <a href="#" id="menu-toggle">
+            <i className="las la-bars"></i>
+          </a>
 
-    render() {
-        const { data } = this.props;
-        const { showProfileMenu } = this.state;
+          <p>Панель приборов</p>
+        </div>
 
-        return (
-            <nav className="navbar navbar-expand-lg">
-                <div className="navbar-left">
-                    <a href="#" id="menu-toggle">
-                        <i className="las la-bars"></i>
-                    </a>
+        <div className="navbar-right">
+          <div className="navbar-rigth-icons">
+            <a href="#">
+              <i className="las la-search"></i>
+            </a>
+            <a href="#">
+              <i className="las la-envelope"></i>
+            </a>
+            <a href="#">
+              <i className="las la-bell"></i>
+            </a>
+          </div>
 
-                    <p>Панель приборов</p>
+          <div className="navbar-avatar" onClick={this.NavbarDropDown}>
+            <a href="#">
+              <div className="avatar">
+                <img src={avatar} alt="avatar" />
+              </div>
+            </a>
+            {data ? (
+              <a href="#">
+                {data.firstName} {data.lastName}
+              </a>
+            ) : (
+              <a href="#">Загрузка...</a>
+            )}
+          </div>
+        </div>
+        <nav
+          style={{ display: showProfileMenu ? "block" : "none" }}
+          className="dropdown-block-menu"
+        >
+          <div className="dropdown-bg-info">
+            <div className="dropdown-wrapper">
+              <div className="dropdown-info">
+                <div className="avatar-menu">
+                  <img src={avatar} alt="avatar" />
                 </div>
-
-                <div className="navbar-right">
-                    <a href="#">
-                        <i className="las la-search"></i>
-                    </a>
-                    <a href="#">
-                        <i className="las la-envelope"></i>
-                    </a>
-                    <a href="#">
-                        <i className="las la-bell"></i>
-                    </a>
-                    <div className="navbar-avatar" onClick={this.NavbarDropDown}>
-                        <a href="#">
-                            <div className="avatar">
-                                <img src={avatar} alt="avatar" />
-                            </div>
-                        </a>
-                        {data ? (
-                            <a href="#">
-                                {data.firstName} {data.lastName}
-                            </a>
-                        ) : (
-                                <a href="#">Загрузка...</a>
-                            )}
-                    </div>
+                <div className="dropdown-text">
+                  {data ? (
+                    <p>
+                      {data.firstName} {data.lastName}
+                    </p>
+                  ) : (
+                    <p>Загрузка...</p>
+                  )}
+                  <span className="dropdown-email">
+                    {data ? data.email : "Загрузка..."}
+                  </span>
                 </div>
-                <nav style={{ display: showProfileMenu ? 'block' : 'none' }} className="dropdown-block-menu">
-                    <div className="dropdown-bg-info">
-                        <div className="dropdown-wrapper">
-                            <div className="dropdown-info">
-                                <div className="avatar-menu">
-                                    <img src={avatar} alt="avatar" />
-                                </div>
-                                <div className="dropdown-text">
-                                    {data ? (
-                                        <p>
-                                            {data.firstName} {data.lastName}
-                                        </p>
-                                    ) : (
-                                            <p>Загрузка...</p>
-                                        )}
-                                    <span className="dropdown-email">
-                                        {data ? data.email : 'Загрузка...'}
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="dropdown-wrapper-ul">
-                        <ul>
-                            <li>
-                                <i className="las la-user"></i>
-                                <Link to="profile">Your profile</Link>
-                            </li>
-                            <li>
-                                <i className="las la-cog"></i>
-                                <Link to="settings">Settings</Link>
-                            </li>
-                            <li>
-                                <i class="las la-sign-out-alt"></i>
-                                <Link to="/logout">Sign out</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </nav>
-        );
-    }
+              </div>
+            </div>
+          </div>
+          <div className="dropdown-wrapper-ul">
+            <ul>
+              <li>
+                <i className="las la-user"></i>
+                <Link to="profile">Your profile</Link>
+              </li>
+              <li>
+                <i className="las la-cog"></i>
+                <Link to="settings">Settings</Link>
+              </li>
+              <li>
+                <i class="las la-sign-out-alt"></i>
+                <Link to="/logout">Sign out</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </nav>
+    );
+  }
 }
 
 function mapStateToProps(state) {
-    const { data } = state.profile;
+  const { data } = state.profile;
 
-    return {
-        data,
-    };
+  return {
+    data,
+  };
 }
 
 const connectedPortfolioNavbar = connect(mapStateToProps)(PortfolioNavbar);

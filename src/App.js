@@ -8,6 +8,7 @@ import StepSignUp from './pages/auth/StepSignup';
 import PortfolioPage from './pages/portfolio';
 import TestPage from './pages/test';
 import EmailConfirm from './pages/auth/EmailConfirm';
+import PaymentsCard from './pages/portfolio/components/PaymentsCard';
 
 import history from './history';
 
@@ -28,6 +29,7 @@ function App() {
             <Link to='recover'>- Восстановление пароля </Link>
             <Link to='recover-confirm'>- Смена пароля </Link>
             <Link to='stepsignup'>- Регистрация2 </Link>
+            <Link to='paymentscard'>- Оплата </Link>
           </li>
         </ul>
       </nav>
@@ -41,6 +43,7 @@ function App() {
         <StepSignUp path='stepsignup'/>
         <Logout path='logout'/>
         <EmailConfirm path='confirm/:token'/>
+        <PaymentsCard path='paymentscard/*' />
       </Router>
     </div>
   );

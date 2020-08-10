@@ -1,144 +1,161 @@
 .navbar {
-  border-bottom: 1px solid #e8ecef;
-  background-color: #ffffff;
-  max-height: 65px;
-  height: 100%;
-  padding: 13px 0;
-  justify-content: space-between;
+    border-bottom: 1px solid #e8ecef;
+    background-color: #ffffff;
+    max-height: 65px;
+    height: 100%;
+    padding: 13px 0;
+    justify-content: space-between;
 }
 
 .navbar-left {
-  display: flex;
-  padding-left: 26px;
+    display: flex;
+    padding-left: 26px;
 }
 
 #menu-toggle {
-  padding: 0 20px 0 0;
-  display: block;
+    padding: 0 20px 0 0;
+    display: block;
 }
 
 .navbar i {
-  font-size: 22px;
-  color: #778ca2;
+    font-size: 22px;
+    color: #778ca2;
 }
 
 .navbar-left p {
-  display: inline-block;
-  margin: 0;
+    display: inline-block;
+    margin: 0;
 }
 
 .navbar-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 300px;
-  width: 100%;
-  padding-right: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    padding-right: 34px;
 }
 
 .navbar-right a {
-  display: block;
+    display: block;
+}
+
+.navbar-rigth-icons {
+    margin-right: 10px;
+    max-width: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 156px;
-  width: 100%;
+    max-width: 156px;
+    width: auto;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.navbar-avatar a:nth-child(2) {
+    margin-left: 5px;
+    width: max-content;
 }
 
 .avatar {
-  border: 1px solid #98a9bc;
-  border-radius: 50%;
-  padding: 2px;
+    border: 1px solid #98a9bc;
+    border-radius: 50%;
+    padding: 2px;
 }
 
 .avatar img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 /* Выпадающее меню - dropdown menu */
 .dropdown-block-menu {
-  max-width: 286px;
-  height: 236px;
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 16px rgba(153, 155, 168, 0.12);
-  border-radius: 4px;
-  position: absolute;
-  top: 80px;
-  right: 30px;
-  z-index: 999999;
-  /* display: none; */
+    max-width: 286px;
+    height: 236px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 16px rgba(153, 155, 168, 0.12);
+    border-radius: 4px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    z-index: 999999;
+    /* display: none; */
 }
 
 .dropdown-bg-info {
-  height: calc(80 * 100 * 1% / 236);
-  background-color: #f8fafb;
+    height: calc(80 * 100 * 1% / 236);
+    background-color: #f8fafb;
 }
 
 .dropdown-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dropdown-wrapper {
-  padding: 24px 57px 0 20px;
-  width: inherit;
+    padding: 24px 57px 0 20px;
+    width: inherit;
 }
 
 .avatar-menu img {
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
 }
 
-.dropdown-wrapper-ul{
+.dropdown-wrapper-ul {
     padding: 20px 20px 0;
 }
 
-ul > li {
-  list-style-type: none;
+ul>li {
+    list-style-type: none;
 }
 
-.dropdown-block-menu ul > li > a {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #252631;
+.dropdown-block-menu ul>li>a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #252631;
 }
 
 .dropdown-block-menu ul {
-  padding: 0;
-  margin: 0;
-  
+    padding: 0;
+    margin: 0;
+
 }
 
-.dropdown-block-menu ul > li{
+.dropdown-block-menu ul>li {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
 
 .dropdown-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .dropdown-text a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1b1e24;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1b1e24;
 }
 
 .dropdown-email {
-  font-family: Rubik. sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  color: #98a9bc;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #98a9bc;
 }
+
+@media (max-width: 375px) {}
