@@ -1,3 +1,7 @@
 tasks:
   - init: yarn install && yarn run build
     command: yarn run start
+
+vscode:
+  extensions:
+    - HookyQR.beautify@1.4.11:n9DJEUFbYD/YHaBXxm+pYw==

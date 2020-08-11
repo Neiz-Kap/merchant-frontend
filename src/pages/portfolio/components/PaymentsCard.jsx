@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
-import "./PaymentsCard.css";
 import { Router, Link } from "@reach/router";
+import "./PaymentsCard.css";
 
 export default class PaymentsCard extends React.Component {
     Banks = () => (
@@ -50,35 +50,37 @@ export default class PaymentsCard extends React.Component {
     render() {
         return (
             <div className="card-payment-bg">
-                <div className="logo-title"><span>io</span><p>finance</p></div>
-                <div className="info-list">
-                    <div className="list-header">
-                        <div className="info">
-                            <div className="info-text">
-                                <p className="card-payment-title">{ this.state.name }</p>
-                            </div>
-                            <div className="list-header-icons">
-                                <button>click</button>
+                <div className="card-payment-content">
+                    <div className="logo-title absolute-position"><span>io</span><p>finance</p></div>
+                    <div className="info-list border-radius">
+                        <div className="card-payment-header">
+                            <div className="card-payment-info">
+                                <div className="info-text">
+                                    <p className="card-payment-title">{ this.state.name }</p>
+                                </div>
+                                <div className="list-header-icons">
+                                    <button>click</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="payment-info-text">
-                        <p className="number-donate">Платёж №9213774</p>
-                        <a href="">Вернуться в магазин</a>
-                    </div>
-                    <Router>
-                        <this.Banks path="/" />
-                        <this.Qiwi path="qiwi" />
-                    </Router>
-                    <div className="donate-info">
-                        {this.state.info.map(item => (
-                            <p>{item}</p>
-                        ))}
-                    </div>
-                    <div className="donate-block">
-                        <p>{this.state.amount}р.</p>
-                        <span>Появились вопросы?</span>
-                        <button>Оплатить</button>
+                        <div className="payment-info-text">
+                            <p className="number-donate">Платёж №9213774</p>
+                            <a href="">Вернуться в магазин</a>
+                        </div>
+                        <Router>
+                            <this.Banks path="/" />
+                            <this.Qiwi path="qiwi" />
+                        </Router>
+                        <div className="donate-info">
+                            {this.state.info.map(item => (
+                                <p>{item}</p>
+                            ))}
+                        </div>
+                        <div className="donate-block">
+                            <p>{this.state.amount}р.</p>
+                            <span>Появились вопросы?</span>
+                            <button>Оплатить</button>
+                        </div>
                     </div>
                 </div>
             </div>
