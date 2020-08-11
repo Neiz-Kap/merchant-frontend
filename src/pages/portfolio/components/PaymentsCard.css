@@ -7,11 +7,76 @@
     align-items: center;
 }
 
+.card-payment-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.card-payment-header{
+    max-height: 56px;
+    padding: 13px 20px;
+    background-color: #E8ECEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-payment-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .info-list {
     max-width: 450px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+.card-payment-title {
+    font-weight: 500;
+    font-size: 24px!important;
+    line-height: 28px!important;
+    text-transform: uppercase;
+}
+
+/* Номер платежа */
+.payment-info-text{
+    width: max-content;
+    padding-left: 5px;
+    margin: 23px 0 42px 33px;
+    border-left: 6px solid #E8ECEF;
+}
+
+.number-donate{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* Bank Cards */
+.fisrt-bankcard{
+    max-width: 271px;
+    width: 100%;
+    max-height: 159px;
+    height: 100%;
+    background: #F6F6F6;
+    border-radius: 9px;
+}
+
+/*  info  */
+.donate-info{
+    padding-left: 5px;
+    margin: 22px 0 42px 33px;
+    font-size: 12px;
+    line-height: 14px;
+    border-left: 6px solid rgba(255, 255, 255, 0.404);
+}
+        
 
